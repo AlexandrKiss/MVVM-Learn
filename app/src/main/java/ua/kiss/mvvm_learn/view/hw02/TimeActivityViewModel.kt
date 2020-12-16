@@ -23,12 +23,12 @@ class TimeActivityViewModel: ViewModel() {
 //                timeUpdater.postValue("${setZero(hour)}:${setZero(minute)}:${setZero(second)}")
 
                 timeUpdater.value = "${setZero(hour)}:${setZero(minute)}:${setZero(second)}"
-                if (hour == minute && hour == second) updateDate()
+                if (hour == 0 && minute == 0 && second == 0) updateDate()
 
                 handler.postDelayed(this, 1000)
             }
         }
-        handler.post(runnableCode); //выполнение Runnable-задачи в UIThread - безопасно для UI
+        handler.post(runnableCode) //выполнение Runnable-задачи в UIThread - безопасно для UI
     }
 
     fun updateDate() {
