@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MVVM-Learn</string>
+    <string name="lesson_02">Lesson 02</string>
+    <string name="home_work">Home Work</string>
+    <string name="class_work">Class Work</string>
+</resources>
